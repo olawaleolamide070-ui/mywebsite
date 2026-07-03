@@ -1,59 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olawale Olamide - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav>
+
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">OO</a>
+            <a href="index.html" class="logo">Olawale</a>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="planner.html">Academic Planner</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="hero">
-        <img src="images/ChatGPT Image Dec 24, 2025, 05_37_59 PM.png" alt="Olawale Olamide">
-        <h1>Olawale Olamide</h1>
-        <p>Welcome to my portfolio website</p>
-    </section>
-
-    <div class="container">
-        <div class="card bio">
-            <div class="bio-text">
-                <h3>About Me</h3>
-                <p>Hello! I'm a passionate Computer Science student with a love for web development and software engineering. I enjoy creating innovative solutions to real-world problems and am always eager to learn new technologies.</p>
-                <p>When I'm not coding, you can find me exploring new hiking trails, reading tech blogs, or contributing to open-source projects. I believe in continuous learning and strive to improve my skills every day.</p>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">Creative Developer & Designer</span>
+                <h1 class="hero-title">I craft <span class="highlight">digital experiences</span> that matter</h1>
+                <p class="hero-desc">A Computer Science student passionate about building clean web applications and
+                    creating designs that leave a lasting impression.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn-primary">View Projects</a>
+                    <a href="contact.html" class="btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/ChatGPT Image Dec 24, 2025, 05_37_59 PM.png" alt="Olawale Olamide">
             </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3 style="color: #2c3e50; margin-bottom: 15px;">Quick Links</h3>
-            <p>Explore my portfolio to learn more about me, view my projects, use the academic planner, or get in touch!</p>
-            <br>
-            <p><strong>About Me:</strong> Learn about my education, skills, and interests</p>
-            <p><strong>Projects:</strong> Check out my latest work and achievements</p>
-            <p><strong>Academic Planner:</strong> Organize your tasks efficiently</p>
-            <p><strong>Contact:</strong> Feel free to reach out anytime</p>
+    <section class="about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-images-row">
+                        <img src="images/ChatGPT Image Dec 24, 2025, 05_37_59 PM.png" alt="Olawale Olamide"
+                            class="about-img-primary">
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal reveal-delay-2">
+                    <span class="section-label">About Me</span>
+                    <h3>Building the future, one line of code at a time</h3>
+                    <p>Hello! I'm a Computer Science student at Miva Open University with a deep passion for web
+                        development and software engineering. I enjoy turning complex problems into simple, elegant
+                        solutions.</p>
+                    <p>When I'm not coding, you'll find me exploring new hiking trails, reading tech blogs, or
+                        contributing to open-source projects. I believe in continuous learning and always strive to push
+                        my boundaries.</p>
+                    <a href="about.html" class="btn-text">Learn more about me &rarr;</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+    <section class="services-section">
+        <div class="section-container">
+            <div class="reveal">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Services & Expertise</h2>
+                <p class="section-desc">From concept to deployment, I deliver polished digital solutions tailored to
+                    your needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon">/</div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, clean websites using HTML, CSS, and JavaScript with attention to detail and
+                        user experience.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon">#</div>
+                    <h3>Graphic Design</h3>
+                    <p>Creating clean, impactful visuals that tell stories and capture attention through thoughtful
+                        design.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon">&gt;</div>
+                    <h3>Problem Solving</h3>
+                    <p>Breaking down complex problems into simple, functional solutions through code and logical
+                        thinking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="section-container">
+            <div class="reveal">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-desc">Technologies and tools I work with to bring ideas to life.</p>
+            </div>
+            <div class="skills-wrapper">
+                <div class="skill-category reveal">
+                    <h4>Frontend</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                    </div>
+                    <h4>Tools</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Canva</span>
+                    </div>
+                </div>
+                <div class="skills-visual reveal reveal-delay-2">
+                    <div class="skill-block">
+                        <div class="skill-block-icon">&lt;/&gt;</div>
+                        <h5>Web Design</h5>
+                        <span>Frontend</span>
+                    </div>
+                    <div class="skill-block">
+                        <div class="skill-block-icon">{ }</div>
+                        <h5>Programming</h5>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-block">
+                        <div class="skill-block-icon">O</div>
+                        <h5>Version Control</h5>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-block">
+                        <div class="skill-block-icon">~</div>
+                        <h5>Problem Solving</h5>
+                        <span>Logic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="section-container reveal">
+            <h2>Have a project in mind?</h2>
+            <p>Let's work together to create something exceptional. I'm always open to new opportunities and
+                collaborations.</p>
+            <a href="contact.html" class="btn-primary">Start a Conversation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Olawale</a>
+                    <p>A Computer Science student passionate about creating meaningful digital experiences through code
+                        and design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="planner.html">Planner</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:olawaleolamide070@gmail.com">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/olamide-olawale-1792503b0" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/olawaleolamide070-ui" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#">&#128231;</a>
+                    <a href="#">&#128279;</a>
+                    <a href="#">&#128187;</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>

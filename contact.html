@@ -7,94 +7,159 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
+
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">OO</a>
+            <a href="index.html" class="logo">Olawale</a>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="planner.html">Academic Planner</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <h2 class="section-title">Contact Me</h2>
+    <section style="padding-top: 140px; min-height: 100vh;">
+        <div class="section-container">
+            <div class="reveal">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Let's talk</h2>
+                <p class="section-desc">Have a question or want to work together? Feel free to reach out.</p>
+            </div>
 
-        <div class="card">
-            <form class="contact-form" onsubmit="return validateForm()">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
-                    <div class="error-message" id="nameError">Please enter your name.</div>
+            <div class="contact-grid">
+                <div class="reveal">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">&#128231;</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>olawaleolamide070@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">&#128205;</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">&#128222;</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>08111469784</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                <div class="reveal reveal-delay-2">
+                    <form class="contact-form" id="contactForm" onsubmit="return validateForm()">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name">
+                                <div class="error-message" id="nameError">Please enter your name.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com">
+                                <div class="error-message" id="emailError">Please enter a valid email.</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                            <div class="error-message" id="phoneError">Please enter a valid phone number.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..."></textarea>
+                            <div class="error-message" id="messageError">Please enter your message.</div>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
                 </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                    <div class="error-message" id="phoneError">Please enter a valid phone number (numbers only).</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-                    <div class="error-message" id="messageError">Please enter your message.</div>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Olawale</a>
+                    <p>A Computer Science student passionate about creating meaningful digital experiences through code and design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="planner.html">Planner</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:olawaleolamide070@gmail.com">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/olamide-olawale-1792503b0" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/olawaleolamide070-ui" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#">&#128231;</a>
+                    <a href="#">&#128279;</a>
+                    <a href="#">&#128187;</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script>
         function validateForm() {
             let isValid = true;
+            document.querySelectorAll('.error-message').forEach(function(el) {
+                el.style.display = 'none';
+            });
 
-            // Reset all errors
-            document.querySelectorAll('.error-message').forEach(el => el.style.display = 'none');
-
-            // Validate name
-            const name = document.getElementById('name').value.trim();
+            var name = document.getElementById('name').value.trim();
             if (name === '') {
                 document.getElementById('nameError').style.display = 'block';
                 isValid = false;
             }
 
-            // Validate email
-            const email = document.getElementById('email').value.trim();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var email = document.getElementById('email').value.trim();
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 document.getElementById('emailError').style.display = 'block';
                 isValid = false;
             }
 
-            // Validate phone (numbers only)
-            const phone = document.getElementById('phone').value.trim();
-            const phoneRegex = /^[0-9]+$/;
+            var phone = document.getElementById('phone').value.trim();
+            var phoneRegex = /^[0-9]+$/;
             if (!phoneRegex.test(phone)) {
                 document.getElementById('phoneError').style.display = 'block';
                 isValid = false;
             }
 
-            // Validate message
-            const message = document.getElementById('message').value.trim();
+            var message = document.getElementById('message').value.trim();
             if (message === '') {
                 document.getElementById('messageError').style.display = 'block';
                 isValid = false;
@@ -102,7 +167,7 @@
 
             if (isValid) {
                 alert('Message sent successfully!');
-                document.querySelector('.contact-form').reset();
+                document.getElementById('contactForm').reset();
             }
 
             return false;

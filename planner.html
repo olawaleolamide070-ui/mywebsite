@@ -5,83 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academic Planner - Olawale Olamide</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .planner-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .task-input-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .task-input-row input {
+            flex: 1;
+            padding: 14px 18px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 14px;
+            font-family: inherit;
+            background: #fafafa;
+            transition: all 0.3s ease;
+        }
+        .task-input-row input:focus {
+            outline: none;
+            border-color: #6366f1;
+            background: #fff;
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.08);
+        }
+        .task-input-row button {
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #6366f1, #3b82f6);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        .task-input-row button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+        }
+        .task-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .task-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        .task-item:hover {
+            border-color: #e0e0e0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+        .task-item.completed span {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+        .task-item span {
+            flex: 1;
+            font-size: 14px;
+            color: #333;
+        }
+        .task-item button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: inherit;
+            transition: all 0.2s ease;
+        }
+        .task-item button:hover {
+            transform: translateY(-1px);
+        }
+        .btn-complete {
+            background: #ecfdf5;
+            color: #059669;
+        }
+        .btn-delete {
+            background: #fef2f2;
+            color: #dc2626;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #aaa;
+        }
+        .empty-state p {
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
+
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">OO</a>
+            <a href="index.html" class="logo">Olawale</a>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="planner.html">Academic Planner</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <h2 class="section-title">Academic Planner</h2>
+    <section style="padding-top: 140px; min-height: 100vh; background: linear-gradient(180deg, #f0f7ff 0%, #e8f4f8 100%);">
+        <div class="section-container">
+            <div class="reveal">
+                <span class="section-label">Academic Planner</span>
+                <h2 class="section-title">Organize your tasks</h2>
+                <p class="section-desc">Stay on top of your academic workload. Add tasks, mark them complete, and keep track of your progress.</p>
+            </div>
 
-        <div class="planner-container">
-            <div class="card">
-                <div class="input-group">
+            <div class="planner-wrapper reveal reveal-delay-2" style="margin-top: 50px;">
+                <div class="task-input-row">
                     <input type="text" id="taskInput" placeholder="Enter a task...">
                     <button onclick="addTask()">Add Task</button>
                 </div>
 
                 <ul class="task-list" id="taskList"></ul>
+
+                <div class="empty-state" id="emptyState">
+                    <p>No tasks yet. Add one above to get started.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Olawale</a>
+                    <p>A Computer Science student passionate about creating meaningful digital experiences through code and design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="planner.html">Planner</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:olawaleolamide070@gmail.com">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/olamide-olawale-1792503b0" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/olawaleolamide070-ui" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#">&#128231;</a>
+                    <a href="#">&#128279;</a>
+                    <a href="#">&#128187;</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script>
         function addTask() {
-            const input = document.getElementById('taskInput');
-            const taskText = input.value.trim();
+            var input = document.getElementById('taskInput');
+            var taskText = input.value.trim();
+            if (taskText === '') return;
 
-            if (taskText === '') {
-                alert('Please enter a task');
-                return;
-            }
-
-            const taskList = document.getElementById('taskList');
-            const li = document.createElement('li');
+            var taskList = document.getElementById('taskList');
+            var li = document.createElement('li');
             li.className = 'task-item';
-            li.innerHTML = `
-                <span>${taskText}</span>
-                <button class="btn-complete" onclick="completeTask(this)">Complete</button>
-                <button class="btn-delete" onclick="deleteTask(this)">Delete</button>
-            `;
+            li.innerHTML = '<span>' + taskText + '</span>' +
+                '<button class="btn-complete" onclick="completeTask(this)">Done</button>' +
+                '<button class="btn-delete" onclick="deleteTask(this)">Remove</button>';
 
             taskList.appendChild(li);
             input.value = '';
+            updateEmpty();
         }
 
-        function completeTask(button) {
-            const taskItem = button.parentElement;
-            taskItem.classList.toggle('completed');
-            button.textContent = taskItem.classList.contains('completed') ? 'Undo' : 'Complete';
+        function completeTask(btn) {
+            var item = btn.parentElement;
+            item.classList.toggle('completed');
+            btn.textContent = item.classList.contains('completed') ? 'Undo' : 'Done';
         }
 
-        function deleteTask(button) {
-            const taskItem = button.parentElement;
-            taskItem.remove();
+        function deleteTask(btn) {
+            btn.parentElement.remove();
+            updateEmpty();
+        }
+
+        function updateEmpty() {
+            var list = document.getElementById('taskList');
+            var empty = document.getElementById('emptyState');
+            empty.style.display = list.children.length === 0 ? 'block' : 'none';
         }
 
         document.getElementById('taskInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                addTask();
-            }
+            if (e.key === 'Enter') addTask();
         });
     </script>
     <script src="script.js"></script>

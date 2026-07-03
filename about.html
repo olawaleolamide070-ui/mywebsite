@@ -9,79 +9,123 @@
 </head>
 
 <body>
-    <nav>
+
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">OO</a>
+            <a href="index.html" class="logo">Olawale</a>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="planner.html">Academic Planner</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-grid">
-            <div class="card">
-                <h3 style="color: #2b7f99; margin-bottom: 15px;">Education</h3>
-                <p><strong>Bachelor of Science in Computer Science</strong></p>
-                <p>Miva Open University | 2025 - 2030</p>
-                <br>
-                <p><strong>High School Diploma</strong></p>
-                <p>Central High School | 2019 - 2023</p>
-                <p>GPA: 3.8/4.0</p>
+    <section style="padding-top: 140px; min-height: 100vh; background: linear-gradient(180deg, #f5f0ff 0%, #ede7f6 100%);">
+        <div class="section-container">
+            <div class="reveal">
+                <span class="section-label">About</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-desc">A Computer Science student passionate about building clean web applications and creating designs that leave a lasting impression.</p>
             </div>
 
-            <div class="card">
-                <h3 style="color: #378396; margin-bottom: 15px;">Career Aspirations</h3>
-                <p>I aspire to become a Full-Stack Developer working on impactful projects that solve real-world
-                    problems. My goal is to work with innovative teams at tech companies where I can contribute to
-                    building scalable and user-friendly applications.</p>
-                <br>
-                <p>Long-term, I hope to launch my own tech startup focused on educational technology solutions.</p>
-            </div>
+            <div class="about-cards-grid">
+                <div class="project-card reveal" style="padding: 30px;">
+                    <h3 style="color: #7c3aed; margin-bottom: 15px; font-size: 1.25rem;">Education</h3>
+                    <p><strong>Bachelor of Science in Computer Science</strong></p>
+                    <p>Miva Open University | 2025 - 2030</p>
+                    <br>
+                    <p><strong>High School Diploma</strong></p>
+                    <p>Central High School | 2019 - 2023</p>
+                    <p>GPA: 3.8/4.0</p>
+                </div>
 
-            <div class="card">
-                <h3 style="color: #396694; margin-bottom: 15px;">Technical Skills</h3>
-                <ul class="skill-list">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Git</li>
-                    <li>MySQL</li>
-                    <li>VS Code</li>
-                </ul>
-            </div>
+                <div class="project-card reveal reveal-delay-1" style="padding: 30px;">
+                    <h3 style="color: #7c3aed; margin-bottom: 15px; font-size: 1.25rem;">Career Aspirations</h3>
+                    <p>I aspire to become a Full-Stack Developer working on impactful projects that solve real-world problems. My goal is to work with innovative teams at tech companies where I can contribute to building scalable and user-friendly applications.</p>
+                    <br>
+                    <p>Long-term, I hope to launch my own tech startup focused on educational technology solutions.</p>
+                </div>
 
-            <div class="card">
-                <h3 style="color: #2c3e50; margin-bottom: 15px;">Hobbies & Interests</h3>
-                <p>When I'm not coding, I enjoy:</p>
-                <br>
-                <p>Hiking and exploring nature trails</p>
-                <p>Reading tech blogs and books</p>
-                <p>Playing chess</p>
-                <p>Contributing to open-source projects</p>
-                <p>Photography</p>
+                <div class="project-card reveal reveal-delay-3" style="padding: 30px;">
+                    <h3 style="color: #7c3aed; margin-bottom: 15px; font-size: 1.25rem;">Technical Skills</h3>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">HTML5</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">CSS3</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">JavaScript</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Python</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Java</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">React</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Node.js</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">Git</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">MySQL</li>
+                        <li style="background: #f0eefb; color: #5b41a0; padding: 6px 16px; border-radius: 20px; font-size: 0.875rem;">VS Code</li>
+                    </ul>
+                </div>
+
+                <div class="project-card reveal reveal-delay-4" style="padding: 30px;">
+                    <h3 style="color: #7c3aed; margin-bottom: 15px; font-size: 1.25rem;">Hobbies & Interests</h3>
+                    <p>When I'm not coding, I enjoy:</p>
+                    <br>
+                    <p>Hiking and exploring nature trails</p>
+                    <p>Reading tech blogs and books</p>
+                    <p>Playing chess</p>
+                    <p>Contributing to open-source projects</p>
+                    <p>Photography</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Olawale</a>
+                    <p>A Computer Science student passionate about creating meaningful digital experiences through code and design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="planner.html">Planner</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:olawaleolamide070@gmail.com">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/olamide-olawale-1792503b0" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/olawaleolamide070-ui" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#">&#128231;</a>
+                    <a href="#">&#128279;</a>
+                    <a href="#">&#128187;</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

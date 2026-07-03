@@ -1,66 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Olawale Olamide</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav>
+
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">OO</a>
+            <a href="index.html" class="logo">Olawale</a>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="planner.html">Academic Planner</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <h2 class="section-title">My Projects</h2>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" alt="E-Commerce Website">
-                <div class="project-info">
-                    <h3>E-Commerce Website</h3>
-                    <p>A fully responsive e-commerce platform built with HTML, CSS, and JavaScript. Features include product listing, shopping cart, and checkout functionality.</p>
-                    <a href="#" class="project-link">View Project</a>
-                </div>
+    <section style="padding-top: 140px; min-height: 100vh; background: linear-gradient(180deg, #f5f0ff 0%, #ede7f6 100%);">
+        <div class="section-container">
+            <div class="reveal">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-desc">A collection of work that reflects my journey in design and development.</p>
             </div>
-
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Task Manager App">
-                <div class="project-info">
-                    <h3>Task Manager App</h3>
-                    <p>A mobile-responsive task management application with features for adding, editing, and deleting tasks. Built using React and Node.js.</p>
-                    <a href="#" class="project-link">View Project</a>
+            <div class="projects-grid">
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-thumb">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" alt="Design and Visual Concepts">
+                        <div class="project-overlay">
+                            <a href="https://www.postermywall.com/index.php/d/pixelhub" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Design</span>
+                        <h3>Design and Visual Concepts</h3>
+                        <p>From brand identities to social media graphics, I design visuals that communicate ideas clearly and leave a lasting impression. I work with tools like Canva and Photoshop to bring creative concepts to life.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Data Dashboard">
-                <div class="project-info">
-                    <h3>Data Analytics Dashboard</h3>
-                    <p>An interactive dashboard for visualizing data using charts and graphs. Built with Python, Flask, and Chart.js for real-time data representation.</p>
-                    <a href="#" class="project-link">View Project</a>
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-thumb">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop" alt="Business Management">
+                        <div class="project-overlay">
+                            <a href="https://alliedafrocoop.com/series-4-trust-the-glue-that-binds-the-cooperative/" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Business</span>
+                        <h3>Business Management</h3>
+                        <p>I manage the daily operations and strategic initiatives of a cooperative. In this role, I am responsible for leading team members, organizing workflow, and solving real-world organizational challenges. Additionally I manage and secure the data of our members, continuously finding a way to improve our data systems and processes. This experience allows me to apply problem-solving, data management and structured thinking to business operations.</p>
+                        <br>
+                        <p>You can learn more about our organization here:</p>
+                        <br><a href="https://alliedafrocoop.com/series-4-trust-the-glue-that-binds-the-cooperative/" target="_blank">Allied Afrocoop</a>
+                    </div>
+                </div>
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-thumb">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="https://pixelhub.iceiy.com/?i=1" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web</span>
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive, animated website built with vanilla HTML, CSS, and JavaScript.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+    <section class="cta-section">
+        <div class="section-container reveal">
+            <h2>Want to work together?</h2>
+            <p>Let's bring your ideas to life. I'm always open to new projects and collaborations.</p>
+            <a href="contact.html" class="btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Olawale</a>
+                    <p>A Computer Science student passionate about creating meaningful digital experiences through code and design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="planner.html">Planner</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:olawaleolamide070@gmail.com">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/olamide-olawale-1792503b0" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/olawaleolamide070-ui" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Olawale Olamide. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#">&#128231;</a>
+                    <a href="#">&#128279;</a>
+                    <a href="#">&#128187;</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
